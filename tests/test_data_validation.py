@@ -208,7 +208,9 @@ def test_committed_sample_200_validity():
     """Verify data/samples/sample_200.jsonl conforms completely to schema and offsets."""
     sample_file = Path("data/samples/sample_200.jsonl")
     if not sample_file.exists():
-        pytest.skip("data/samples/sample_200.jsonl is gitignored to comply with GitHub Push Protection")
+        pytest.skip(
+            "data/samples/sample_200.jsonl is gitignored to comply with GitHub Push Protection"
+        )
 
     records = []
     with open(sample_file, encoding="utf-8") as f:

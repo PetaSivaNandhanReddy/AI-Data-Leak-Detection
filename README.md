@@ -118,7 +118,7 @@ python -m venv .venv
 # source .venv/bin/activate
 
 # 3. Install pinned developer dependencies and install package in editable mode
-pip install -r requirements-dev.txt
+pip install -r .github/requirements-dev.txt
 pip install -e .
 
 # 4. Run the quality and security verification suite

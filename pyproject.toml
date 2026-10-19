@@ -63,6 +63,7 @@ ignore = []
 
 [tool.ruff.lint.per-file-ignores]
 "src/leakguard/data/templates.py" = ["E501"]
+"app.py" = ["E402"]
 
 [tool.ruff.format]
 quote-style = "double"
