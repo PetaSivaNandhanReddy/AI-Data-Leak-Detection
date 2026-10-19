@@ -1,0 +1,80 @@
+{
+  "checksums": {
+    "all.jsonl": "d8cb434e312b1c6af7f33be2c4f78838c2c7c2b65df8c4880e66315ff4cb0d70",
+    "sample_200.jsonl": "af9c1675d8af40a45ab2ed6cf77dbaa23295f7f86b4eb6358a64da84a4b59df3",
+    "test.jsonl": "d76b89dc408ecc109fdca59ee9f15001b1b4341af0e5100e1f71a3b8a4768bf6",
+    "train.jsonl": "4f3cfcf1125d09742291eac05258f6195f9346bb8c6c6886b5a7ef0805d10e7d",
+    "val.jsonl": "6e77592c6a2e02cad99ca9dfb141ee1256189e6dc52c2b462431dc9b51a77f48"
+  },
+  "class_distribution": {
+    "high_risk_exposure": 1553,
+    "no_exposure": 950,
+    "possible_exposure": 1497
+  },
+  "dataset_name": "LEAKGUARD Synthetic Benchmark Corpus",
+  "entity_counts": {
+    "AADHAAR": 181,
+    "ACCOUNT_NUMBER": 284,
+    "API_KEY": 700,
+    "CARD": 336,
+    "EMAIL": 884,
+    "IBAN": 52,
+    "PAN": 206,
+    "PASSWORD": 725,
+    "PERSON": 1497,
+    "PHONE": 781,
+    "VOTER_ID": 52
+  },
+  "family_count": 15,
+  "generator_version": "0.1.0",
+  "intended_use": "Evaluating entity span detection and message risk triage for the LEAKGUARD security intelligence console. Contains synthetic data only.",
+  "licenses": {
+    "dataset": "Proprietary / Author Project Baseline",
+    "faker": "MIT",
+    "python_standard_library": "PSF License"
+  },
+  "manifest_version": "1.0.0",
+  "privacy_notice": "All personal names, emails, cards, Aadhaar, PAN, and phone numbers are synthetically generated with test ranges and RFC domains. Zero real personal data.",
+  "seed": 42,
+  "source": "Author-written template library rendered via Faker (en_IN, en_US) and mathematical checksum generators",
+  "split_counts": {
+    "test": 822,
+    "train": 2382,
+    "val": 796
+  },
+  "split_families": {
+    "test": [
+      "fam_banking_in",
+      "fam_hr_recruitment",
+      "fam_identity_in"
+    ],
+    "train": [
+      "fam_cloud_infra",
+      "fam_customer_support",
+      "fam_decoy_negative",
+      "fam_dev_logs",
+      "fam_ecommerce_orders",
+      "fam_fin_cards",
+      "fam_multiline_tickets",
+      "fam_policy_guidance",
+      "fam_unicode_samples"
+    ],
+    "val": [
+      "fam_casing_variants",
+      "fam_credentials_chat",
+      "fam_credentials_git"
+    ]
+  },
+  "template_count": 157,
+  "total_records": 4000,
+  "transformation_steps": [
+    "1. Author writes 157 structured templates across 15 semantic families.",
+    "2. SyntheticValueFactory generates realistic values using Faker (en_IN, en_US) and algorithmic checksums (Verhoeff for Aadhaar, Luhn for Cards, Mod-97 for IBAN).",
+    "3. Segments are rendered with dynamic offset accumulation to capture exact [start, end) character spans.",
+    "4. Immediate per-row schema and offset alignment validation.",
+    "5. Deterministic shuffling and group splitting by family_id (60% train, 20% val, 20% test).",
+    "6. Cross-split exact duplicate hash scan and n-gram Jaccard near-duplicate verification.",
+    "7. Extraction of 200-row representative balanced sample for git tracking.",
+    "8. SHA-256 integrity checksum generation."
+  ]
+}

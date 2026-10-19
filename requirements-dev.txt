@@ -1,0 +1,9 @@
+# Pinned developer dependencies for LEAKGUARD
+# Target Python version: 3.11.9
+-r requirements.txt
+pytest==9.1.1
+ruff==0.17.1
+pip-audit==2.10.1
+hypothesis==6.170.1
+faker==40.43.0
+pytest-cov==7.1.0

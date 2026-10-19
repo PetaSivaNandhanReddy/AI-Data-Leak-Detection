@@ -1,0 +1,19 @@
+{
+  "run_date": "2026-10-18T19:07:05.459251+00:00",
+  "git_commit": "153cb19378bb21fb0a3dd5377130bf6e247a7ccb",
+  "python_version": "3.11.9",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "package_versions": {
+    "sklearn": "1.9.1",
+    "spacy": "3.8.16"
+  },
+  "dataset_split_method": "by_family_id (60/20/20)",
+  "dataset_seed": 42,
+  "split_sizes": {
+    "train": 2382,
+    "val": 796,
+    "test": 822,
+    "challenge": 0
+  },
+  "challenge_set_status": "missing"
+}

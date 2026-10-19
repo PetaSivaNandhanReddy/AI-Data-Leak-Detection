@@ -1,0 +1,22 @@
+title = "LEAKGUARD Gitleaks Configuration"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Documented synthetic test fixture fragments and dummy examples"
+regexes = [
+    '''AKIAIOSFODNN7EXAMPLE_2345''',
+    '''AKIAIOSFODNN7EXAMPLE''',
+    '''Admin123!''',
+    '''user@company\.com''',
+    '''example\.com''',
+    '''example\.org''',
+    '''vitstudent\.ac\.in''',
+]
+paths = [
+    '''data/samples/.*''',
+    '''reports/.*''',
+    '''docs/.*''',
+    '''tests/.*''',
+]

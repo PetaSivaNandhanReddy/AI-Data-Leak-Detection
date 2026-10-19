@@ -1,0 +1,9 @@
+# Pinned runtime dependencies for LEAKGUARD
+# Target Python version: 3.11.9
+streamlit==1.66.0
+pandas==3.0.6
+scikit-learn==1.9.1
+spacy==3.8.16
+cryptography==50.0.2
+# Model package for Streamlit Community Cloud:
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
